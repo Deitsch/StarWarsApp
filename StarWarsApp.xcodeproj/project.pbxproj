@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8917E7F12BD53766009594E4 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 8917E7F02BD53766009594E4 /* Logging */; };
 		895394772BD52BE400C522C7 /* StarWarsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394762BD52BE400C522C7 /* StarWarsAppApp.swift */; };
 		895394792BD52BE400C522C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394782BD52BE400C522C7 /* ContentView.swift */; };
 		8953947B2BD52BE500C522C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8953947A2BD52BE500C522C7 /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 		8953948D2BD52BE500C522C7 /* StarWarsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8953948C2BD52BE500C522C7 /* StarWarsAppTests.swift */; };
 		895394972BD52BE500C522C7 /* StarWarsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394962BD52BE500C522C7 /* StarWarsAppUITests.swift */; };
 		895394992BD52BE500C522C7 /* StarWarsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394982BD52BE500C522C7 /* StarWarsAppUITestsLaunchTests.swift */; };
+		895394B62BD5353000C522C7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394B52BD5353000C522C7 /* Config.swift */; };
+		895394B92BD5359B00C522C7 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394B82BD5359B00C522C7 /* Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8917E7EE2BD53697009594E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		895394732BD52BE400C522C7 /* Star Wars App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895394762BD52BE400C522C7 /* StarWarsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAppApp.swift; sourceTree = "<group>"; };
 		895394782BD52BE400C522C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		895394A62BD52C3F00C522C7 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		895394A72BD52C4A00C522C7 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		895394A82BD52C5500C522C7 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
+		895394B52BD5353000C522C7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		895394B82BD5359B00C522C7 /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8917E7F12BD53766009594E4 /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8917E7EF2BD53766009594E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8953946A2BD52BE400C522C7 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +100,7 @@
 				8953948B2BD52BE500C522C7 /* StarWarsAppTests */,
 				895394952BD52BE500C522C7 /* StarWarsAppUITests */,
 				895394742BD52BE400C522C7 /* Products */,
+				8917E7EF2BD53766009594E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +117,9 @@
 		895394752BD52BE400C522C7 /* StarWarsApp */ = {
 			isa = PBXGroup;
 			children = (
+				8917E7EE2BD53697009594E4 /* Info.plist */,
+				895394B42BD5352500C522C7 /* Helper */,
+				895394B22BD534DE00C522C7 /* Views */,
 				895394762BD52BE400C522C7 /* StarWarsAppApp.swift */,
 				895394782BD52BE400C522C7 /* ContentView.swift */,
 				8953947A2BD52BE500C522C7 /* Assets.xcassets */,
@@ -147,6 +165,22 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		895394B22BD534DE00C522C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		895394B42BD5352500C522C7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				895394B52BD5353000C522C7 /* Config.swift */,
+				895394B82BD5359B00C522C7 /* Convenience.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +198,9 @@
 			dependencies = (
 			);
 			name = StarWarsApp;
+			packageProductDependencies = (
+				8917E7F02BD53766009594E4 /* Logging */,
+			);
 			productName = StarWarsApp;
 			productReference = 895394732BD52BE400C522C7 /* Star Wars App.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 8953946A2BD52BE400C522C7;
+			packageReferences = (
+				895394B72BD5358D00C522C7 /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = 895394742BD52BE400C522C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,7 +341,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				895394832BD52BE500C522C7 /* StarWarsApp.xcdatamodeld in Sources */,
+				895394B92BD5359B00C522C7 /* Convenience.swift in Sources */,
 				895394802BD52BE500C522C7 /* Persistence.swift in Sources */,
+				895394B62BD5353000C522C7 /* Config.swift in Sources */,
 				895394792BD52BE400C522C7 /* ContentView.swift in Sources */,
 				895394772BD52BE400C522C7 /* StarWarsAppApp.swift in Sources */,
 			);
@@ -466,6 +508,7 @@
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +533,7 @@
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -514,7 +558,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.deitsch.StarWarsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,7 +578,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.deitsch.StarWarsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -652,6 +696,7 @@
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -676,7 +721,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.deitsch.StarWarsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -769,6 +814,7 @@
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -793,7 +839,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V59VWC5YAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.deitsch.StarWarsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -870,6 +916,25 @@
 			defaultConfigurationName = "Release Dev";
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		895394B72BD5358D00C522C7 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8917E7F02BD53766009594E4 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 895394B72BD5358D00C522C7 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		895394812BD52BE500C522C7 /* StarWarsApp.xcdatamodeld */ = {

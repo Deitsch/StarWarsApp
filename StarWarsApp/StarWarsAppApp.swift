@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import Logging
+
+let logger = Logger(label: "io.deitsch.starwarsapp")
 
 @main
 struct StarWarsAppApp: App {
@@ -15,6 +18,10 @@ struct StarWarsAppApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onAppear {
+                    logger.info("\(Bundle.version)")
+                    logger.info("\(Config.api_url.url!)")
+                }
         }
     }
 }
