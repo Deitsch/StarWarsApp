@@ -28,7 +28,6 @@ extension Bundle {
         let dictionary = Self.main.infoDictionary
         let version = dictionary?["CFBundleShortVersionString"] as? String
         let build = dictionary?["CFBundleVersion"] as? String
-        let gitHashVersion = dictionary?["GITHashVersion"] as? String
         return "\(version ?? "noBundleShortVersion") (\(build ?? "noBundleVersion"))"
     }
 }

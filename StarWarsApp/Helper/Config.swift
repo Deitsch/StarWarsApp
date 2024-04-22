@@ -8,7 +8,7 @@
 import Foundation
 
 enum Config: String {
-    case api_url = "API_URL"
+    case apiUrl = "API_URL"
 }
 
 extension Config {
