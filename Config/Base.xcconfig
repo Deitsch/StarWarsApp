@@ -6,7 +6,7 @@ MARKETING_VERSION = 0.0.1
 CURRENT_PROJECT_VERSION = 1 // will be set to CI_PIPELINE_ID
 PRODUCT_NAME_BASE = Star Wars App
 DEVELOPMENT_TEAM = xxx
-PRODUCT_MODULE_NAME = StarWarsApp
+PRODUCT_MODULE_NAME = StarWarsAppModule
 ENABLE_USER_SCRIPT_SANDBOXING = NO // XCode 15 defaults to YES -> breaks swiftlint
 
 API_URL = https:/$()/swapi.dev/api

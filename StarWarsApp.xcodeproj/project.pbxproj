@@ -13,7 +13,7 @@
 		892DF7E42BD6F41E005D6030 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DF7E32BD6F41E005D6030 /* DataProvider.swift */; };
 		892DF7E62BD6F424005D6030 /* RemoteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DF7E52BD6F424005D6030 /* RemoteDataProvider.swift */; };
 		892DF7E82BD6F42F005D6030 /* DemoDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892DF7E72BD6F42F005D6030 /* DemoDataProvider.swift */; };
-		895394772BD52BE400C522C7 /* StarWarsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394762BD52BE400C522C7 /* StarWarsAppApp.swift */; };
+		895394772BD52BE400C522C7 /* StarWarsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394762BD52BE400C522C7 /* StarWarsApp.swift */; };
 		895394792BD52BE400C522C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394782BD52BE400C522C7 /* ContentView.swift */; };
 		8953947B2BD52BE500C522C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8953947A2BD52BE500C522C7 /* Assets.xcassets */; };
 		8953947E2BD52BE500C522C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8953947D2BD52BE500C522C7 /* Preview Assets.xcassets */; };
@@ -28,6 +28,8 @@
 		897C21812BD9904700925DC3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21802BD9904700925DC3 /* Person.swift */; };
 		897C21832BD9905100925DC3 /* PaginationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21822BD9905100925DC3 /* PaginationWrapper.swift */; };
 		897C21852BD9909900925DC3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21842BD9909900925DC3 /* ApiError.swift */; };
+		897C21882BD9B15800925DC3 /* Planet+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21872BD9B15800925DC3 /* Planet+Extensions.swift */; };
+		897C218A2BD9B17700925DC3 /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21892BD9B17700925DC3 /* Person+Extensions.swift */; };
 		89BAD47F2BD6B40A00248DA2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD47E2BD6B40900248DA2 /* Router.swift */; };
 		89BAD4812BD6B45000248DA2 /* StarWarsRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD4802BD6B45000248DA2 /* StarWarsRoutes.swift */; };
 		89BAD4832BD6B48400248DA2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD4822BD6B48400248DA2 /* SettingsView.swift */; };
@@ -59,7 +61,7 @@
 		892DF7E52BD6F424005D6030 /* RemoteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataProvider.swift; sourceTree = "<group>"; };
 		892DF7E72BD6F42F005D6030 /* DemoDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDataProvider.swift; sourceTree = "<group>"; };
 		895394732BD52BE400C522C7 /* Star Wars App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		895394762BD52BE400C522C7 /* StarWarsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAppApp.swift; sourceTree = "<group>"; };
+		895394762BD52BE400C522C7 /* StarWarsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsApp.swift; sourceTree = "<group>"; };
 		895394782BD52BE400C522C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8953947A2BD52BE500C522C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8953947D2BD52BE500C522C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 		897C21802BD9904700925DC3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		897C21822BD9905100925DC3 /* PaginationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationWrapper.swift; sourceTree = "<group>"; };
 		897C21842BD9909900925DC3 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		897C21872BD9B15800925DC3 /* Planet+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+Extensions.swift"; sourceTree = "<group>"; };
+		897C21892BD9B17700925DC3 /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
 		89BAD47E2BD6B40900248DA2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		89BAD4802BD6B45000248DA2 /* StarWarsRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsRoutes.swift; sourceTree = "<group>"; };
 		89BAD4822BD6B48400248DA2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -144,14 +148,14 @@
 			isa = PBXGroup;
 			children = (
 				8917E7EE2BD53697009594E4 /* Info.plist */,
+				897C21862BD9B14700925DC3 /* CoreData */,
 				89BAD47D2BD6B3FD00248DA2 /* Router */,
 				895394B42BD5352500C522C7 /* Helper */,
 				89BAD4862BD6B52C00248DA2 /* Services */,
 				895394B22BD534DE00C522C7 /* Views */,
-				895394762BD52BE400C522C7 /* StarWarsAppApp.swift */,
+				895394762BD52BE400C522C7 /* StarWarsApp.swift */,
 				8953947A2BD52BE500C522C7 /* Assets.xcassets */,
 				8953947F2BD52BE500C522C7 /* Persistence.swift */,
-				895394812BD52BE500C522C7 /* StarWarsApp.xcdatamodeld */,
 				8953947C2BD52BE500C522C7 /* Preview Content */,
 			);
 			path = StarWarsApp;
@@ -221,6 +225,16 @@
 				897C21842BD9909900925DC3 /* ApiError.swift */,
 			);
 			path = ApiModels;
+			sourceTree = "<group>";
+		};
+		897C21862BD9B14700925DC3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				895394812BD52BE500C522C7 /* StarWarsApp.xcdatamodeld */,
+				897C21872BD9B15800925DC3 /* Planet+Extensions.swift */,
+				897C21892BD9B17700925DC3 /* Person+Extensions.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		89BAD47D2BD6B3FD00248DA2 /* Router */ = {
@@ -414,14 +428,16 @@
 				89BAD47F2BD6B40A00248DA2 /* Router.swift in Sources */,
 				895394B62BD5353000C522C7 /* Config.swift in Sources */,
 				897C217F2BD9904200925DC3 /* Planet.swift in Sources */,
+				897C21882BD9B15800925DC3 /* Planet+Extensions.swift in Sources */,
 				895394792BD52BE400C522C7 /* ContentView.swift in Sources */,
 				892DF7E22BD6F40C005D6030 /* StarWarsApi.swift in Sources */,
 				897C21852BD9909900925DC3 /* ApiError.swift in Sources */,
 				892DF7E02BD6F357005D6030 /* URLRequest+Extension.swift in Sources */,
-				895394772BD52BE400C522C7 /* StarWarsAppApp.swift in Sources */,
+				895394772BD52BE400C522C7 /* StarWarsApp.swift in Sources */,
 				892DF7E82BD6F42F005D6030 /* DemoDataProvider.swift in Sources */,
 				897C21832BD9905100925DC3 /* PaginationWrapper.swift in Sources */,
 				892DF7E42BD6F41E005D6030 /* DataProvider.swift in Sources */,
+				897C218A2BD9B17700925DC3 /* Person+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

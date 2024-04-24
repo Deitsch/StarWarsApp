@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct HomeView: View {
+
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.id, order: .forward)
+    ]) var people: FetchedResults<Person>
+
     var body: some View {
-        Text("Home")
+        List {
+            ForEach(people) { p in
+                HStack {
+                    Text(p.id ?? "") +
+                    Text(" ") +
+                    Text(p.name ?? "")
+                    if let planet = p.homeworld {
+                        Spacer()
+                        Text(planet.name ?? "")
+                    }
+                }
+            }
+        }
     }
 }
 

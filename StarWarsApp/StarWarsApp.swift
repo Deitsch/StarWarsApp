@@ -1,5 +1,5 @@
 //
-//  StarWarsAppApp.swift
+//  StarWarsApp.swift
 //  StarWarsApp
 //
 //  Created by Simon Deutsch on 21.04.24.
@@ -11,7 +11,7 @@ import Logging
 let logger = Logger(label: "io.deitsch.starwarsapp")
 
 @main
-struct StarWarsAppApp: App {
+struct StarWarsApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject private var api = StarWarsApi(dataProvider: RemoteDataProvider())
 
@@ -20,7 +20,7 @@ struct StarWarsAppApp: App {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .task {
-                    await api.syncApi()
+                    await api.syncApi(context: persistenceController.container.newBackgroundContext())
                 }
         }
     }

@@ -9,7 +9,7 @@ import Foundation
 
 class RemoteDataProvider {
 
-    enum RemoteEndpoint: String {
+    private enum Endpoint: String {
         case people
         case planets
     }
@@ -25,7 +25,7 @@ class RemoteDataProvider {
         self.apiURL = apiURL
     }
 
-    private func buildRequest(method: URLRequest.HttpMethod, endpoint: RemoteEndpoint) -> URLRequest {
+    private func buildRequest(method: URLRequest.HttpMethod, endpoint: Endpoint) -> URLRequest {
         var request = URLRequest(url: apiURL.appending(path: endpoint.rawValue))
         request.httpMethod(method)
         return request
