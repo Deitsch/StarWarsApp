@@ -8,6 +8,6 @@
 import Foundation
 
 protocol DataProvider {
-    func loadPeople(page: Int) async throws -> [Person]
-    func loadPlanets(page: Int) async throws -> [Planet]
+    func loadPeople(page: Int) async throws -> [StarWarsApi.Person]
+    func loadPlanets(page: Int) async throws -> [StarWarsApi.Planet]
 }

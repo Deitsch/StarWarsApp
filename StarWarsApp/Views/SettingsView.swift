@@ -13,6 +13,7 @@ struct SettingsView: View {
         NavigationStack {
             List {
                 cell(label: "Version", value: Bundle.version)
+                cell(label: "URL", value: Config.apiUrl.url?.absoluteString ?? "Not set")
             }
             .navigationTitle("Settings")
         }
