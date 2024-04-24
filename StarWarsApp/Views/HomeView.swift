@@ -14,22 +14,26 @@ struct HomeView: View {
     ]) var people: FetchedResults<Person>
 
     var body: some View {
-        List {
-            ForEach(people) { p in
-                HStack {
-                    Text(p.id ?? "") +
-                    Text(" ") +
-                    Text(p.name ?? "")
-                    if let planet = p.homeworld {
-                        Spacer()
-                        Text(planet.name ?? "")
+        NavigationStack {
+            List {
+                ForEach(people) { p in
+                    HStack {
+                        Text(p.id ?? "") +
+                        Text(" ") +
+                        Text(p.name ?? "")
+                        if let planet = p.homeworld {
+                            Spacer()
+                            Text(planet.name ?? "")
+                        }
                     }
                 }
             }
+            .navigationTitle("Home")
         }
     }
 }
 
 #Preview {
     HomeView()
+        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

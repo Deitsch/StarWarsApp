@@ -13,11 +13,11 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        // TODO: create preview content
-//        for _ in 0..<10 {
-//            let newItem = Item(context: viewContext)
-//            newItem.timestamp = Date()
-//        }
+        for i in 0..<10 {
+            let person = Person(context: viewContext)
+            person.id = "\(i)"
+            person.name = "Name \(i)"
+        }
         do {
             try viewContext.save()
         } catch {
