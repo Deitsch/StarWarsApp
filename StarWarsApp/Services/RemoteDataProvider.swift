@@ -18,8 +18,7 @@ class RemoteDataProvider {
     private let apiURL: URL
 
     init() {
-//        , delegate: BypassInvalidCertSessionDelegate(), delegateQueue: nil
-        urlSession = URLSession(configuration: .default)
+        urlSession = URLSession(configuration: .default, delegate: BypassInvalidCertSessionDelegate(), delegateQueue: nil)
         guard let apiURL = Config.apiUrl.url else {
             fatalError("config url always has to be configured")
         }
@@ -65,8 +64,7 @@ extension RemoteDataProvider: DataProvider {
 // workaround because swapi.dev does not have a valid cert since 22.04.2024
 class BypassInvalidCertSessionDelegate: NSObject, URLSessionDelegate {
     public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-         // Trust the certificate even if not valid
-         let urlCredential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
-         completionHandler(.useCredential, urlCredential)
-      }
+        // Trust the certificate even if not valid
+        completionHandler(.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
+    }
 }
