@@ -12,6 +12,6 @@ extension StarWarsApi {
         let count: Int
         let next: URL?
         let previous: URL?
-        let result: [T]
+        let results: [T]
     }
 }

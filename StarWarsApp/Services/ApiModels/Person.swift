@@ -45,7 +45,7 @@ extension StarWarsApi {
             eyeColor = try rootContainer.decode(String.self, forKey: .eyeColor)
             birthYear = try rootContainer.decode(String.self, forKey: .birthYear)
             gender = try rootContainer.decode(String.self, forKey: .gender)
-            homeworldId = try rootContainer.decode(URL.self, forKey: .homeworldId).lastPathComponent
+            homeworldId = try rootContainer.decode(URL.self, forKey: .homeworld).lastPathComponent
         }
 
         public func encode(to encoder: Encoder) throws {
@@ -64,7 +64,7 @@ extension StarWarsApi {
             case eyeColor = "eye_color"
             case birthYear = "birth_year"
             case gender = "gender"
-            case homeworldId = "homeworldId"
+            case homeworld = "homeworld"
         }
     }
 }

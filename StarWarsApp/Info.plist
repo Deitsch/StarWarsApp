@@ -4,16 +4,5 @@
 <dict>
 	<key>API_URL</key>
 	<string>$(API_URL)</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>swapi.dev</key>
-			<dict>
-				<key>New item</key>
-				<string></string>
-			</dict>
-		</dict>
-	</dict>
 </dict>
 </plist>

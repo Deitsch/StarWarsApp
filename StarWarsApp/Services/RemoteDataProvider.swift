@@ -54,7 +54,7 @@ extension RemoteDataProvider: DataProvider {
         }
         do {
             let decodedData = try JSONDecoder().decode(StarWarsApi.PaginationWrapper<T>.self, from: data)
-            return decodedData.result
+            return decodedData.results
         } catch {
             throw StarWarsApi.ApiError.decodingError(error)
         }

@@ -18,7 +18,8 @@ class StarWarsApi: ObservableObject {
 
     func syncApi() async {
         do {
-            let _ = try await dataProvider.loadPeople(page: 1)
+            let res = try await dataProvider.loadPeople(page: 1)
+            print(res)
         }
         catch {
             print(error)
