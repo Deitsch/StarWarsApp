@@ -51,3 +51,16 @@ extension NSManagedObject {
         return object
     }
 }
+
+extension NSManagedObjectContext {
+
+    /// only used for previews, not safe, uses force unwraps!!!
+    func fetchOneOf<T: NSManagedObject>() -> T {
+        let fetchRequest = T.fetchRequest()
+        fetchRequest.fetchLimit = 1
+        // swiftlint:disable force_try
+        let result = try! fetch(fetchRequest)
+        // swiftlint:disable force_cast
+        return result.first! as! T
+    }
+}

@@ -16,7 +16,13 @@ struct PersistenceController {
         for i in 0..<10 {
             let person = Person(context: viewContext)
             person.id = "\(i)"
-            person.name = "Name \(i)"
+            person.name = "Person \(i)"
+        }
+
+        for i in 0..<10 {
+            let planet = Planet(context: viewContext)
+            planet.id = "\(i)"
+            planet.name = "Planet \(i)"
         }
         do {
             try viewContext.save()

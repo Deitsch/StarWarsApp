@@ -21,6 +21,8 @@
 		895394832BD52BE500C522C7 /* StarWarsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 895394812BD52BE500C522C7 /* StarWarsApp.xcdatamodeld */; };
 		895394B62BD5353000C522C7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394B52BD5353000C522C7 /* Config.swift */; };
 		895394B92BD5359B00C522C7 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895394B82BD5359B00C522C7 /* Convenience.swift */; };
+		897118BC2BDAB30F006752D0 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897118BB2BDAB30F006752D0 /* PlanetView.swift */; };
+		897118C02BDAB74F006752D0 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897118BF2BDAB74F006752D0 /* Route.swift */; };
 		897C217F2BD9904200925DC3 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C217E2BD9904200925DC3 /* Planet.swift */; };
 		897C21812BD9904700925DC3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21802BD9904700925DC3 /* Person.swift */; };
 		897C21832BD9905100925DC3 /* PaginationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21822BD9905100925DC3 /* PaginationWrapper.swift */; };
@@ -28,7 +30,6 @@
 		897C21882BD9B15800925DC3 /* Planet+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21872BD9B15800925DC3 /* Planet+Extensions.swift */; };
 		897C218A2BD9B17700925DC3 /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21892BD9B17700925DC3 /* Person+Extensions.swift */; };
 		89BAD47F2BD6B40A00248DA2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD47E2BD6B40900248DA2 /* Router.swift */; };
-		89BAD4812BD6B45000248DA2 /* StarWarsRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD4802BD6B45000248DA2 /* StarWarsRoutes.swift */; };
 		89BAD4832BD6B48400248DA2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD4822BD6B48400248DA2 /* SettingsView.swift */; };
 		89BAD4852BD6B4C000248DA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD4842BD6B4C000248DA2 /* HomeView.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,8 @@
 		895394A82BD52C5500C522C7 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		895394B52BD5353000C522C7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		895394B82BD5359B00C522C7 /* Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
+		897118BB2BDAB30F006752D0 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
+		897118BF2BDAB74F006752D0 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		897C217E2BD9904200925DC3 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		897C21802BD9904700925DC3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		897C21822BD9905100925DC3 /* PaginationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationWrapper.swift; sourceTree = "<group>"; };
@@ -59,7 +62,6 @@
 		897C21872BD9B15800925DC3 /* Planet+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+Extensions.swift"; sourceTree = "<group>"; };
 		897C21892BD9B17700925DC3 /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
 		89BAD47E2BD6B40900248DA2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		89BAD4802BD6B45000248DA2 /* StarWarsRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsRoutes.swift; sourceTree = "<group>"; };
 		89BAD4822BD6B48400248DA2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		89BAD4842BD6B4C000248DA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				895394782BD52BE400C522C7 /* ContentView.swift */,
 				89BAD4822BD6B48400248DA2 /* SettingsView.swift */,
 				89BAD4842BD6B4C000248DA2 /* HomeView.swift */,
+				897118BB2BDAB30F006752D0 /* PlanetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				89BAD47E2BD6B40900248DA2 /* Router.swift */,
-				89BAD4802BD6B45000248DA2 /* StarWarsRoutes.swift */,
+				897118BF2BDAB74F006752D0 /* Route.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -297,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BAD4812BD6B45000248DA2 /* StarWarsRoutes.swift in Sources */,
+				897118BC2BDAB30F006752D0 /* PlanetView.swift in Sources */,
 				895394832BD52BE500C522C7 /* StarWarsApp.xcdatamodeld in Sources */,
 				895394B92BD5359B00C522C7 /* Convenience.swift in Sources */,
 				89BAD4852BD6B4C000248DA2 /* HomeView.swift in Sources */,
@@ -310,6 +313,7 @@
 				897C217F2BD9904200925DC3 /* Planet.swift in Sources */,
 				897C21882BD9B15800925DC3 /* Planet+Extensions.swift in Sources */,
 				895394792BD52BE400C522C7 /* ContentView.swift in Sources */,
+				897118C02BDAB74F006752D0 /* Route.swift in Sources */,
 				892DF7E22BD6F40C005D6030 /* StarWarsApi.swift in Sources */,
 				897C21852BD9909900925DC3 /* ApiError.swift in Sources */,
 				892DF7E02BD6F357005D6030 /* URLRequest+Extension.swift in Sources */,
