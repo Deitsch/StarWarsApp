@@ -29,6 +29,7 @@
 		897C21852BD9909900925DC3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21842BD9909900925DC3 /* ApiError.swift */; };
 		897C21882BD9B15800925DC3 /* Planet+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21872BD9B15800925DC3 /* Planet+Extensions.swift */; };
 		897C218A2BD9B17700925DC3 /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C21892BD9B17700925DC3 /* Person+Extensions.swift */; };
+		89AC1FB12BDF8A10004052F5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AC1FB02BDF8A10004052F5 /* ErrorView.swift */; };
 		89BAD47F2BD6B40A00248DA2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD47E2BD6B40900248DA2 /* Router.swift */; };
 		89BAD4832BD6B48400248DA2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD4822BD6B48400248DA2 /* SettingsView.swift */; };
 		89BAD4852BD6B4C000248DA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BAD4842BD6B4C000248DA2 /* HomeView.swift */; };
@@ -61,6 +62,7 @@
 		897C21842BD9909900925DC3 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		897C21872BD9B15800925DC3 /* Planet+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+Extensions.swift"; sourceTree = "<group>"; };
 		897C21892BD9B17700925DC3 /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
+		89AC1FB02BDF8A10004052F5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		89BAD47E2BD6B40900248DA2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		89BAD4822BD6B48400248DA2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		89BAD4842BD6B4C000248DA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				89BAD4822BD6B48400248DA2 /* SettingsView.swift */,
 				89BAD4842BD6B4C000248DA2 /* HomeView.swift */,
 				897118BB2BDAB30F006752D0 /* PlanetView.swift */,
+				89AC1FB02BDF8A10004052F5 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				89BAD4832BD6B48400248DA2 /* SettingsView.swift in Sources */,
 				897C21812BD9904700925DC3 /* Person.swift in Sources */,
 				895394802BD52BE500C522C7 /* Persistence.swift in Sources */,
+				89AC1FB12BDF8A10004052F5 /* ErrorView.swift in Sources */,
 				89BAD47F2BD6B40A00248DA2 /* Router.swift in Sources */,
 				895394B62BD5353000C522C7 /* Config.swift in Sources */,
 				897C217F2BD9904200925DC3 /* Planet.swift in Sources */,

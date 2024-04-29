@@ -44,19 +44,28 @@ extension RemoteDataProvider: DataProvider {
     }
 
     private func loadPaginatedType<T: Codable>(page: Int, request: URLRequest) async throws -> [T] {
-        let (data, response) = try await urlSession.data(for: request)
-        guard let httpResponse = response as? HTTPURLResponse else {
-            throw StarWarsApi.ApiError.internalServerError
-        }
-        guard httpResponse.statusCode == 200 else {
-            // could be handled more detailed, diff status codes, message mapping ...
-            throw StarWarsApi.ApiError.someError
-        }
         do {
-            let decodedData = try JSONDecoder().decode(StarWarsApi.PaginationWrapper<T>.self, from: data)
-            return decodedData.results
-        } catch {
-            throw StarWarsApi.ApiError.decodingError(error)
+            let (data, response) = try await urlSession.data(for: request)
+            guard let httpResponse = response as? HTTPURLResponse else {
+                throw StarWarsApi.ApiError.internalServerError
+            }
+            guard httpResponse.statusCode == 200 else {
+                // could be handled more detailed, diff status codes, message mapping ...
+                throw StarWarsApi.ApiError.someError
+            }
+            do {
+                let decodedData = try JSONDecoder().decode(StarWarsApi.PaginationWrapper<T>.self, from: data)
+                return decodedData.results
+            } catch {
+                throw StarWarsApi.ApiError.decodingError(error)
+            }
+        }
+        catch {
+            // https://developer.apple.com/documentation/foundation/1508628-url_loading_system_error_codes/nsurlerrorsecureconnectionfailed
+            if (error as NSError).code == NSURLErrorSecureConnectionFailed {
+                throw StarWarsApi.ApiError.sslError
+            }
+            throw error
         }
     }
 }

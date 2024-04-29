@@ -17,15 +17,10 @@ class StarWarsApi: ObservableObject {
         self.dataProvider = dataProvider
     }
 
-    func syncApi(context: NSManagedObjectContext) async {
-        do {
-            try await syncPlanets(context: context)
-            try await syncPeople(context: context)
-            try context.save()
-        }
-        catch {
-            logger.error(error)
-        }
+    func syncApi(context: NSManagedObjectContext) async throws {
+        try await syncPlanets(context: context)
+        try await syncPeople(context: context)
+        try context.save()
     }
 
     // Should use #KeyPath in predicates for type safty
